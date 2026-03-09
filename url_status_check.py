@@ -29,7 +29,7 @@ def check_status(url):
         response = requests.get(url, timeout=5)
         print(f"URL: {url}")
         print(f"Status Code: {response.status_code}")
-        if response.status_code -- 200:
+        if response.status_code == 200:
             print("Success (200 OK)!")
         else:
             print("#FAIL or Redirect.")
