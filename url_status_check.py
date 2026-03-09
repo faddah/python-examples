@@ -33,7 +33,7 @@ def check_status(url):
             print("Success (200 OK)!")
         else:
             print("#FAIL or Redirect.")
-    except requests.exceptions.RequestExceptions:
+    except requests.exceptions.RequestException:
         print("Did Not connect -or- Request timed out.")
 
 target_url = input("Enter a website URL: ")
